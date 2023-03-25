@@ -1,0 +1,25 @@
+//note that this kind of comment won't make through the preprocessor
+/*the standard CSS comments will show up on the output
+.css file*/
+
+//imports mixins to this scss file
+@import "variables";
+@import "mixins";
+
+
+  //includes the mixin for list format
+  @include liformat;
+
+  .mixintest{
+//created new mixin for different fonts and colors//
+  @include lifeformattwo;
+}
+
+//includes the mixin for grid format
+@include grid;
+//formats the grid item//
+    .grid-item {
+      background-color:rgb(204, 154, 177);
+      border: 5px solid rgb(168, 78, 110);
+      margin:20px;
+    }
